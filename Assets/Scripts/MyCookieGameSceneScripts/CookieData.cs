@@ -11,9 +11,11 @@ public class CookieData : ScriptableObject
     public string cookieName;
     //初期売上金額
     public double bacePrice;
-    //売上金額の上昇率
+    //生産量上昇に必要な金額
+    public double lavelUpPrice;
+    //1回の生産量上昇率
     public double rateIncr;
-    //上昇回数の上限
+    //生産量上昇回数の上限
     public int maxCount;
     
 

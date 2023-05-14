@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MoneyCount : MonoBehaviour
 {
-    public BigInteger Money;
+    public double Money;
     [SerializeField]
     private Text moneyCountText;
 
@@ -26,5 +26,12 @@ public class MoneyCount : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void TotalAmount(double a)
+    {
+        Money = Money + a;
+        moneyCountText.text = Money.ToString("N0") + "円";
+
     }
 }

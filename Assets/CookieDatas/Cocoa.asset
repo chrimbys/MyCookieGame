@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21578ceb42263407a884a5be938ba9a3, type: 3}
-  m_Name: New Cookie Data
+  m_Name: Cocoa
   m_EditorClassIdentifier: 
-  num: 0
-  cookieName: 
-  bacePrice: 0
-  rateIncr: 0
-  maxCount: 0
+  num: 1
+  cookieName: Cocoa
+  bacePrice: 10
+  rateIncr: 1.2
+  maxCount: 99
