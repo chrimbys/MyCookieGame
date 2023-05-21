@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21578ceb42263407a884a5be938ba9a3, type: 3}
-  m_Name: Plain
+  m_Name: Carot
   m_EditorClassIdentifier: 
-  num: 0
-  cookieName: Plain
-  bacePrice: 1
-  lavelUpPrice: 10
-  ingredient: 1
+  num: 18
+  cookieName: Carot
+  bacePrice: 262144
+  lavelUpPrice: 2621440
+  rateIncr: 1.5
+  maxCount: 99

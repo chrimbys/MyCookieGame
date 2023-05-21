@@ -21,12 +21,6 @@ public class UIManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void OnclickTopButton()
     {
         Start();
@@ -34,14 +28,12 @@ public class UIManager : MonoBehaviour
 
     public void OnclickShopButton()
     {
-        toppanel.SetActive(false);
         shoppanel.SetActive(true);
         studiopanel.SetActive(false);
 
     }
     public void OnclickStudioButton()
     {
-        toppanel.SetActive(false);
         shoppanel.SetActive(false);
         studiopanel.SetActive(true);
 
