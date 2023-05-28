@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 19
   cookieName: Acorn
-  bacePrice: 524288
-  lavelUpPrice: 5242880
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 50000000
+  lavelUpPrice: 500000000
+  ingredient: 1e+17

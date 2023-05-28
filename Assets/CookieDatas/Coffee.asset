@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 16
   cookieName: Coffee
-  bacePrice: 65536
-  lavelUpPrice: 655360
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 5000000
+  lavelUpPrice: 50000000
+  ingredient: 100000000000000

@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 2
   cookieName: Choco
-  bacePrice: 4
+  bacePrice: 10
   lavelUpPrice: 500
-  rateIncr: 1.5
-  maxCount: 99
+  ingredient: 100

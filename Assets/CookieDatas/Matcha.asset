@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 3
   cookieName: Matcha
-  bacePrice: 8
-  lavelUpPrice: 80
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 50
+  lavelUpPrice: 1000
+  ingredient: 1000

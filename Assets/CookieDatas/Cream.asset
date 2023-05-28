@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 8
   cookieName: Cream
-  bacePrice: 256
-  lavelUpPrice: 2560
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 10000
+  lavelUpPrice: 100000
+  ingredient: 100000000

@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class MakeButton : MonoBehaviour
 {
-    //クッキーの材料購入から製作までのBoolをカバーする
+    //
     //top画面のクッキーパネルを格納する
-    [SerializeField]
-    GameObject cookie;
-    //cookieDataを受け取る
+    //[SerializeField]
+    //GameObject cookie;
+    //
     [SerializeField]
     ShopButton shopButton;
-    //CookiesData cookiesData;
     //CookieData内、purchase bool を受け取る
     bool purchase;
     //クッキーを作るボタン
@@ -24,28 +23,28 @@ public class MakeButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(make == false)
+        if(make == false)//クッキーを作っていない
         {
-            purchase = shopButton.purchase;
-            if (purchase == true)
+            purchase = shopButton.purchase;//shoppanelのボタン
+            if (purchase == true)//材料購入した
             {
-                button.interactable = true;
+                button.interactable = true;//作るボタンを有効化
             }
             else
             {
-                button.interactable = false;
+                button.interactable = false;//材料を購入していない場合、無効化
             }
         }
         else
         {
-            button.interactable = false;
+            button.interactable = false;//クッキーを作った後は無効化
         }
     }
 
     //ボタンを押すと実行
-    public void Make()
+    public void MakeBool()
     {
-        cookie.SetActive(true);
         make = true;
+        Debug.Log("make=" + make);
     }
 }

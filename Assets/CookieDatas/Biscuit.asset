@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 7
   cookieName: Biscuit
-  bacePrice: 128
-  lavelUpPrice: 1280
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 5000
+  lavelUpPrice: 50000
+  ingredient: 10000000

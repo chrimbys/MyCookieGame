@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 9
   cookieName: Raisin
-  bacePrice: 512
-  lavelUpPrice: 5120
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 20000
+  lavelUpPrice: 200000
+  ingredient: 1000000000

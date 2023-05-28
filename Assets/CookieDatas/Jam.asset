@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 13
   cookieName: Jam
-  bacePrice: 8192
-  lavelUpPrice: 81920
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 500000
+  lavelUpPrice: 5000000
+  ingredient: 1000000000000

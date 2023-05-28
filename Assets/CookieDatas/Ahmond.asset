@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 6
   cookieName: Ahmond
-  bacePrice: 64
-  lavelUpPrice: 640
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 1000
+  lavelUpPrice: 20000
+  ingredient: 1000000

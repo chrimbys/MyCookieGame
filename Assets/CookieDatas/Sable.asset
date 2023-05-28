@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num: 5
   cookieName: Sable
-  bacePrice: 32
-  lavelUpPrice: 320
-  rateIncr: 1.5
-  maxCount: 99
+  bacePrice: 500
+  lavelUpPrice: 10000
+  ingredient: 100000
