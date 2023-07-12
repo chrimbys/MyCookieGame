@@ -20,8 +20,11 @@ public class ShopButton : MonoBehaviour
     //材料購入の判定
     public bool purchase = false;
 
+    SoundManager soundManager;
+
     void Start()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         ingredient = cookiesData.ingredient;
     }
     //売上金額が材料購入に必要な金額以上か判断
@@ -46,6 +49,7 @@ public class ShopButton : MonoBehaviour
     //ボタンを押すと実行
     public void Purchase()
     {
+        soundManager.OnClickPurchaseButton();
         moneyCount.money -= ingredient;
         moneyCount.TotalAmountUpdate();
         purchase = true;

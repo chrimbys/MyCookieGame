@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
+using naichilab.Scripts.Extensions;
 
 public class MoneyCount : MonoBehaviour
 {
-    public double money = 0;
+    public double money = 1;
     [SerializeField]
-    private Text moneyCountText;
+    Text moneyCountText;
     //[SerializeField]
     //LavelUpButton lavelUpButton;
     [SerializeField]
@@ -54,6 +55,6 @@ public class MoneyCount : MonoBehaviour
     public void TotalAmountUpdate()
     {
         //N0で整数値が３桁のコンマ区切り文字列に変換される// 
-        moneyCountText.text = money.ToString("N0") + "円";
+        moneyCountText.text = money.ToReadableString() + "円";
     }
 }

@@ -18,9 +18,13 @@ public class MakeButton : MonoBehaviour
     [SerializeField]
     Button button;
     //クッキーを作ったことを判定する
-    bool make = false;
+    public bool make = false;
 
-    // Update is called once per frame
+    SoundManager soundManager;
+    void Start()
+    {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+    }
     void Update()
     {
         if(make == false)//クッキーを作っていない
@@ -44,6 +48,7 @@ public class MakeButton : MonoBehaviour
     //ボタンを押すと実行
     public void MakeBool()
     {
+        soundManager.OnClickMakeButton();
         make = true;
         Debug.Log("make=" + make);
     }

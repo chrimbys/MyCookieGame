@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TextBlinking : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class TextBlinking : MonoBehaviour
     Color color;
 
     [SerializeField]
-    Text text;
+    TextMeshProUGUI text;
 
     [SerializeField]
     float speed = 1.0f;
@@ -20,7 +21,7 @@ public class TextBlinking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text = this.gameObject.GetComponent<Text>();
+        text = this.gameObject.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame

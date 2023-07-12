@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 842b3edc8bf734be9b20fd7e6cd610a1
+  - enabled: 1
+    path: Assets/Scenes/MyCookieGame.unity
+    guid: 343da0d1f9e274b41a5ea0eee568b217
   m_configObjects: {}

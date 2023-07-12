@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using naichilab.Scripts.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,24 +31,24 @@ public class LavelUpButton : MonoBehaviour
     //レベルアップ回数の上限
     [SerializeField]
     int maxCount;
-
     //初期売上金額
     public double bacePrice;
     //売上金額
     public double price;
-
-
     //有効・無効にしたいボタン
     [SerializeField]
     Button button;
 
+    SoundManager soundManager;
+
     void Start()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         bacePrice = cookiesData.bacePrice;
         lavelUpPrice = cookiesData.lavelUpPrice;
         //rateIncr = this.rateIncr;
         priceText.text = bacePrice + "円/秒";
-        buttonText.text = "生産量UP\n" + incrCount + "回\n" + lavelUpPrice.ToString("f2") + "円";
+        buttonText.text = "生産量UP\n" + incrCount + "回\n" + lavelUpPrice.ToReadableString() + "円";
     }
     // Update is called once per frame
     void Update()
@@ -63,13 +64,14 @@ public class LavelUpButton : MonoBehaviour
     }
     public void LavelUp()
     {
+        soundManager.OnClickLavelUpButton();
         moneyCount.money -= lavelUpPrice;//合計売上金額の減額・変更
         moneyCount.TotalAmountUpdate();
         incrCount++;//レベルアップ回数の加算
         lavelUpPrice *= rateIncr;//レベルアップに必要な金額を増額
         price = bacePrice + bacePrice * incrCount;//毎秒の売上金額を更新
-        priceText.text = price + "円/秒";
-        buttonText.text = "生産量UP\n" + incrCount + "回\n" + lavelUpPrice.ToString("f2") + "円";//レベルアップ回数・金額を更新
+        priceText.text = price.ToReadableString() + "円/秒";
+        buttonText.text = "生産量UP\n" + incrCount + "回\n" + lavelUpPrice.ToReadableString() + "円";//レベルアップ回数・金額を更新
         if (incrCount == maxCount)//上限に達した場合ボタンを無効にする
         {
             button.interactable = false;
