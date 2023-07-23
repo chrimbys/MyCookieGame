@@ -15,6 +15,6 @@ public class CookieRotateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, speed * Time.deltaTime);
+        transform.Rotate(0, 0, -speed * Time.deltaTime);
     }
 }

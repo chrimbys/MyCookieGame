@@ -13,7 +13,7 @@ public class TextBlinking : MonoBehaviour
     TextMeshProUGUI text;
 
     [SerializeField]
-    float speed = 1.0f;
+    float speed = 2.0f;
 
     [SerializeField]
     float time;

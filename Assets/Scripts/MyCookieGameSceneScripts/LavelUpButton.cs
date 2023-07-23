@@ -47,7 +47,7 @@ public class LavelUpButton : MonoBehaviour
         bacePrice = cookiesData.bacePrice;
         lavelUpPrice = cookiesData.lavelUpPrice;
         //rateIncr = this.rateIncr;
-        priceText.text = bacePrice + "円/秒";
+        priceText.text = bacePrice.ToReadableString() + "円/秒";
         buttonText.text = "生産量UP\n" + incrCount + "回\n" + lavelUpPrice.ToReadableString() + "円";
     }
     // Update is called once per frame
