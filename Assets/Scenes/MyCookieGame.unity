@@ -2783,7 +2783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &349848244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6856,7 +6856,7 @@ MonoBehaviour:
   maskTop: {fileID: 249290031}
   maskShop: {fileID: 1546512947}
   maskStudio: {fileID: 803114780}
-  TBPanel: {fileID: 349848243}
+  TBPanel: {fileID: 11988747}
   TBPanels: {fileID: 1400437135}
   flag: 0
   textController: {fileID: 267421053}
@@ -14788,6 +14788,10 @@ PrefabInstance:
     - target: {fileID: 6885886695998058722, guid: 404eba4ca19d449518a929c65c121c97, type: 3}
       propertyPath: m_Name
       value: Panel (Plain)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885886695998058722, guid: 404eba4ca19d449518a929c65c121c97, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6885886695998058723, guid: 404eba4ca19d449518a929c65c121c97, type: 3}
       propertyPath: m_Pivot.x

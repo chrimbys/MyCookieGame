@@ -121,7 +121,6 @@ public class TextController : MonoBehaviour
         {
             Invoke("StartTutorial", 2.0f);
             panel.SetActive(false);//終了後は非表示
-            TBPanel.SetActive(false);
         }
         else if (i == j)
         {

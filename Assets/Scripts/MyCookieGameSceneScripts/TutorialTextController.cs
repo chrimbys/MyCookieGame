@@ -106,6 +106,7 @@ public class TutorialTextController : MonoBehaviour
         else if(i == tutorialTexts.Length - 1)
         {
             textController.flag0 = 1;
+            TBPanel.SetActive(false);
             Destroy(this.gameObject);//終了後は削除
         }
     }
